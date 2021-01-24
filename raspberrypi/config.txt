@@ -1,0 +1,35 @@
+
+config.txt 追加LCD分辨率
+
+max_sub_current=1
+hdmi_force_hotplug=1
+config_hdmi_boost=7
+hdmi_group=2
+hdmi_mode=1
+hdmi_mode=87
+hdmi_drive=1
+display_rotate=0
+hdmi_cvt 1366 768 60 6 0 0 0
+
+无线配置
+新建 ssh (无后缀) 空白文件
+
+新建 wpa_supplicant.conf，添加内容：
+country=CN
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+network={
+   ssid="JWHOME"
+   psk="dudu&weiwei2002"
+   key_mgmt=WPA-PSK
+   priority=5
+}
+ R_val=col>>8
+    G_val=col&0x00FF
+
+
+ssh与sftp、vnc view连接
+host:192.168.3.65
+port：22
+user:pi
+password:raspberry
