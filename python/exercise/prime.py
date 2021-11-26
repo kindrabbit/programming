@@ -7,11 +7,11 @@ for x in range(1, number):
         continue
     if x != 2 and x % 2 == 0:
         continue
-    if x != 3 and x % 3 ==0:
+    if x != 3 and x % 3 == 0:
         continue
     if x != 5 and x % 5 == 0:
         continue
-    if x != 7 and x % 7 ==0:
+    if x != 7 and x % 7 == 0:
         continue
     
     n = 10

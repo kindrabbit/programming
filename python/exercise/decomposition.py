@@ -28,6 +28,6 @@ def factorize(num):
 
 
 
-factorize(120)
+factorize(4)
 
 factorize(110)

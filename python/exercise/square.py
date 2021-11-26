@@ -3,13 +3,14 @@
 # print (" %0.3f 的平方根是 %0.3f" % (num,num_sqrt))
 
 def approximate(a, b):
-    flag = 0.001
+    flag = 0.0000001
     # 求近似相等，两个数的绝对值除以小的那个
     # 当得数小于设定的差值时表示接近
     return abs(a - b) / min(a, b) < flag
 
+
 print(
-approximate(15, 15.001)
+    approximate(16, 16.001)
 )
 
 
@@ -22,8 +23,12 @@ def square(num):
         print("x=" + str(x) + " num=" + str(num))
         x = (x + num / x) / 2
 
+        if round(x) * round(x) == num:
+            x = round(x)
+            break
+
     print(str(x) + " * " + str(x) + " ~= " + str(num))
     return x
 
 
-print(square(15))
+print(square(174983287755))
